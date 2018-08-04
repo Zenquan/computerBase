@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+            text-align: center;
+        }
+
+        #c1 {
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id='c1' width="800" height="600">
+        <script>
+            let oC = document.getElementById('c1')
+            let gd = oC.getContext('2d');
+            // gd.rect(100, 200, 400, 200);
+            // gd.stroke();
+           // gd.strokeRect(100, 200, 400, 200)
+            gd.fillRect(100, 200, 400, 200)
+        </script>
+</body>
+
+</html>

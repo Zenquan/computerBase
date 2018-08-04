@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://localhost:8966/socket.io/socket.io.js"></script>
+</head>
+
+<body>
+    <script>
+        let sock = io.connect('ws://localhost:8966');
+        // sock.emit('a', 12, 5, 4); 
+        // sock.on('ttt', function (n) {
+        //             console.log(n)
+        //         })
+        document.onclick = function(){
+            sock.emit('a', 12, 5, 4);
+        }
+    </script>
+</body>
+
+</html>
